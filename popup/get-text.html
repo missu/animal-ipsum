@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="get-text.css" />
+    </head>
+    <body>
+        <div id="panel-content">
+            <p>Animal (crossings) related Lorem Ipsum generator</p>
+            <form id="options" name="options" action="#">
+                <fieldset class="paragragh-size">
+                    <p>Choose a paragraph size:</p>
+                    <label>
+                        <input name="paragraphLength" type="radio" value="short" checked />
+                        <span>short</span>
+                    </label>
+                    <label>
+                        <input name="paragraphLength" type="radio" value="medium" />
+                        <span>medium</span>
+                    </label>
+                    <label>
+                        <input name="paragraphLength" type="radio" value="long" />
+                        <span>long</span>
+                    </label>
+                </fieldset>
+                <label class="num-of-paragraphs">
+                    <span>Number of paragraphs: </span>
+                    <input  id="numOfParagraphs" type="text" value="3" required />
+                </label>
+                <button type="submit">Generate</button>
+            </form>
+            <div id="results">
+
+            </div>
+        </div>
+        <div id="error-content" class="hidden">
+            <p>Can't load extentions on this page.</p>
+            <p>Please try a different page.</p>
+        </div>
+        <script type="module" src="get-text.js"></script>
+    </body>
+</html>

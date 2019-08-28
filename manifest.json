@@ -1,0 +1,28 @@
+{
+    "manifest_version" : 2,
+    "name": "Animal Lipsum",
+    "version": "0.9",
+    "description": "Create sample text for testing content on a page",
+    "homepage_url" : "https://github.com/missu/animal-lipsum/",
+    "icons" : {
+        "48" : "icons/logo-48.PNG",
+        "96" : "icons/logo-96.PNG"
+    },
+    "permissions" : [
+        "activeTab"
+    ],
+    "sidebar_action" :{
+        "default_icon": "icons/logo-48.PNG",
+        "default_title" : "Animal Lipsum",
+        "default_panel" : "popup/get-text.html"
+    },
+    "commands" : {
+        "_execute_sidebar_action" : {
+            "suggested_key" :{
+                "default" : "Ctrl+Shift+L",
+                "mac" : "MacCtrl+Shift+L"
+            },
+            "description" : "Opens the Animal Lipsum extension"
+        }
+    }
+}
