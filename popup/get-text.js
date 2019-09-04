@@ -49,13 +49,13 @@ function createSentence() {
     return sentence.trimRight() + ". "; 
 }
 
-// Takes in a number for number of paragraphs & sentence length and returns a DOM node containing lipsum text.
-function generateLipsum(paramsObj) {
+// Takes in a number for number of paragraphs & sentence length and returns a DOM node containing ipsum text.
+function generateIpsum(paramsObj) {
     const {paragraphLength, numOfParagraphs} = paramsObj;
     let paragraphs = "<p>";
-    let lipsumText = "";
-    const lipsumNode = document.createElement("div");
-    lipsumNode.className = "lipsum-container";
+    let ipsumText = "";
+    const ipsumNode = document.createElement("div");
+    ipsumNode.className = "ipsum-container";
 
     for (let i=0; i < numOfParagraphs; i++) {
         for (let j=0; j < paragraphLength; j++) {
@@ -63,12 +63,12 @@ function generateLipsum(paramsObj) {
             paragraphs += createSentence() + space;
             if (i === paragraphLength) {paragraphs += "</p>";}
         }
-        lipsumText += paragraphs;
+        ipsumText += paragraphs;
         paragraphs = "<p>";
     }
 
-    lipsumNode.innerHTML = lipsumText;
-    return lipsumNode;
+    ipsumNode.innerHTML = ipsumText;
+    return ipsumNode;
 }
 
 // Takes in a string of "short", "medium", or "long" and returns a number for the number of sentences in a paragraph.
@@ -87,8 +87,8 @@ function generateText(event) {
     const form = event.target;
     const paragraphLength = getParagraphlength(form.elements.paragraphLength.value);
     const numOfParagraphs = form.elements.numOfParagraphs.value;
-    const lipsum = generateLipsum({paragraphLength, numOfParagraphs});
-    addTextToDom(lipsum);
+    const ipsum = generateIpsum({paragraphLength, numOfParagraphs});
+    addTextToDom(ipsum);
 }
 
 const form = document.getElementById('options');
