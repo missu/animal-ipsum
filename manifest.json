@@ -1,8 +1,8 @@
 {
     "manifest_version" : 2,
     "name": "Animal Ipsum",
-    "version": "0.9",
-    "description": "Create sample text for testing content on a page",
+    "version": "0.92",
+    "description": "An animal themed tool for creating sample text for testing content on a web page.",
     "homepage_url" : "https://github.com/missu/animal-ipsum/",
     "icons" : {
         "48" : "icons/logo-48.PNG",

@@ -51,23 +51,20 @@ function createSentence() {
 
 // Takes in a number for number of paragraphs & sentence length and returns a DOM node containing ipsum text.
 function generateIpsum(paramsObj) {
-    const {paragraphLength, numOfParagraphs} = paramsObj;
-    let paragraphs = "<p>";
-    let ipsumText = "";
+    const { paragraphLength, numOfParagraphs } = paramsObj;
     const ipsumNode = document.createElement("div");
     ipsumNode.className = "ipsum-container";
 
     for (let i=0; i < numOfParagraphs; i++) {
+        const paragraphNode = document.createElement("p");
+        let sentences = "";
         for (let j=0; j < paragraphLength; j++) {
             const space = (j < paragraphLength - 1 ) ? " " : "";
-            paragraphs += createSentence() + space;
-            if (i === paragraphLength) {paragraphs += "</p>";}
+            sentences += createSentence() + space;
         }
-        ipsumText += paragraphs;
-        paragraphs = "<p>";
+        paragraphNode.textContent = sentences;
+        ipsumNode.appendChild(paragraphNode);
     }
-
-    ipsumNode.innerHTML = ipsumText;
     return ipsumNode;
 }
 

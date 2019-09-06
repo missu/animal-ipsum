@@ -1,3 +1,8 @@
+:root {
+    --teal: #12BFA8;
+    --sand: #FAF6E3;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +17,7 @@ html, body {
 }
 body {
     background-repeat: no-repeat;
-    background-image: linear-gradient(#12BFA8, #FAF6E3 16%, #FAF6E3 84%, #12BFA8 100%);
+    background-image: linear-gradient(var(--teal), var(--sand) 16%, var(--sand) 84%, var(--teal) 100%);
 }
 #panel-content {
     background-image: linear-gradient(rgba(250, 246, 227, .3) -10%, rgb(250, 246, 227) 84%, rgba(250, 246, 227, 0) 100%);
@@ -51,7 +56,7 @@ form {
 }
 
 #results {
-    background-color: #FAF6E3;
+    background-color: var(--sand);
     border-radius: 3px;
     padding: 4px 0px 12px 0px;
 }
@@ -69,5 +74,5 @@ button {
 }
 
 button:hover{
-    background-color: #FAF6E3;
+    background-color: var(--sand);
 }
