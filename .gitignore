@@ -1,3 +1,6 @@
+# Browser artifacts
+web-ext-artifacts/
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db

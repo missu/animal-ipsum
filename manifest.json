@@ -1,7 +1,7 @@
 {
     "manifest_version" : 2,
     "name": "Animal Ipsum",
-    "version": "0.92",
+    "version": "1.0",
     "description": "An animal themed tool for creating sample text for testing content on a web page.",
     "homepage_url" : "https://github.com/missu/animal-ipsum/",
     "icons" : {
@@ -14,7 +14,7 @@
     "sidebar_action" :{
         "default_icon": "icons/logo-48.PNG",
         "default_title" : "Animal Ipsum",
-        "default_panel" : "popup/get-text.html"
+        "default_panel" : "sidebar/get-text.html"
     },
     "commands" : {
         "_execute_sidebar_action" : {
