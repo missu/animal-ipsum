@@ -1,0 +1,25 @@
+{
+  "name": "animal-ipsum",
+  "version": "1.0.0",
+  "description": "An animal themed browser extension for creating sample text for testing content on a web page.",
+  "scripts": {
+    "start": "web-ext run",
+    "build": "web-ext build",
+    "validate": "web-ext lint",
+    "helpme": "web-ext docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missu/animal-ipsum.git"
+  },
+  "keywords": ["browser extension", "extension", "lorem ipsum", "animal ipsum", "animal-ipsum", "Lipsum generator", "dummy text", "word generator"],
+  "author": "missu",
+  "bugs": {
+    "url": "https://github.com/missu/animal-ipsum/issues"
+  },
+  "homepage": "https://github.com/missu/animal-ipsum#readme",
+  "devDependencies" :{
+    "web-ext": "^4.3.0"
+  }
+}
